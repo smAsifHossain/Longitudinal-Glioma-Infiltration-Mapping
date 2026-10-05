@@ -1,0 +1,33 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+*.out
+*.err
+*.pid
+.pytest_cache/
+.mypy_cache/
+
+# Protected imaging data and derived case-level artifacts
+data/
+dataset/
+label/
+finetuning/experiments/
+biomarker_analysis/experiments/
+*.nii
+*.nii.gz
+*.dcm
+*.npy
+*.npz
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+predictions/
+
+# Private manifests and local QC review material
+**/mu_full391_manifest.csv
+qc/private/

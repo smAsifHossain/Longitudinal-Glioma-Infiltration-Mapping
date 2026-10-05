@@ -1,0 +1,37 @@
+PUBLICATION AUDIT
+=================
+Date: 2026-10-05
+Scope: GitHub-ready public export
+
+INCLUDED
+- Exact longitudinal MU v2 label-generation source
+- Five model pipelines: 3D U-Net, SegResNet, MedNeXt-S, Swin-UNETR,
+  and nnU-Net ResEnc-L
+- Aggregate model metrics and figures
+- Aggregate biomarker/volume-agreement tables and figures
+- Environment template, dependency list, Git ignore rules, and documentation
+
+EXCLUDED
+- Raw and derived medical images
+- DICOM and NIfTI files
+- Patient/case-level result tables and private manifests
+- Model weights and checkpoints
+- Hard-coded user/HPC paths
+- Stale legacy label-generation variants
+- Destructive fresh-start/reset helpers
+- QC images, because none were included in the uploaded public candidate
+
+VALIDATION
+- Python source compilation: PASS
+- Bash syntax validation: PASS
+- Exact label-rule self-test: PASS
+- JSON parsing: PASS (5 files)
+- CSV parsing: PASS (26 files)
+- Sensitive path/identifier text scan: PASS
+- Binary figure string scan for known path/identifier patterns: PASS
+- Prohibited imaging/weight artifact scan: PASS
+
+NOTES
+- The repository contains aggregate results only.
+- Add only de-identified, release-authorized QC examples.
+- No software license was selected; choose one before permitting reuse.

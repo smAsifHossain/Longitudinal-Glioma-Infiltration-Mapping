@@ -1,0 +1,2 @@
+case_id,patient,earlier_timepoint,recurrent_timepoint,recurrent_target
+example_0001,subject_example,timepoint_1,timepoint_2,WT123_labels_1_2_3

@@ -1,0 +1,12 @@
+antspyx
+matplotlib
+monai
+nibabel
+numpy
+pandas
+Pillow
+scikit-image
+scikit-learn
+scipy
+torch
+nnunetv2
